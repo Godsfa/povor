@@ -1,0 +1,346 @@
+* {
+  margin: auto;
+}
+html {
+  scroll-behavior: smooth !important ;
+  overflow-x: hidden !important ;
+  height: auto !important ;
+  width: auto !important ;
+ background-color: #faece4;
+}
+h1, h2{
+  font-family:'Poppins', sans-serif;
+  color: #BA68C8;
+}
+/* Section One - Landing Page */
+.hero {
+  min-width: 100%;
+  background-color: #2b2a25;
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  top: 80px;
+  margin-bottom: 50px !important;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+}
+.typed-text{
+    color:#d38edf ;
+}
+
+.hero-text h1 {
+  color: #f8f8f8;
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top:100px;
+  position: relative;
+  bottom: 10rem;
+}
+
+.hero-text p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.hero button {
+  background: #d38edf;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0;
+  margin-inline: 10px;
+}
+.hero button:hover{
+    background: #BA68C8;
+}
+.hero a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-size: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .hero-text {
+    max-width: 700px;
+    position: relative;
+    right: 50px;
+  }
+  .hero-text h1 {
+    position: relative;
+    bottom: 15rem;
+  }
+  .hero-text p {
+    font-size: 20px;
+    position: relative;
+    bottom: 15rem;
+  }
+  .hero button {
+    position: relative;
+    padding: 15px 20px;
+    border-radius: 20px 0;
+    top: -10px;
+    right: 50rem;
+    margin-top: 50px;
+    margin-inline: 20px;
+  }
+  .hero a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 20px;
+  }
+  .hero-image img{
+    width: 200%;
+    position: relative;
+    right: -150px;
+    bottom: 100px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+}
+@media screen and (max-width: 767px) {
+  .hero{
+    position: relative;
+    top: -120px !important; 
+  }
+  .hero-text {
+    flex: 1;
+    margin-bottom: 0px;
+  }.hero-text{
+    position: relative;
+    top:200px;
+  }
+  .hero-text p{
+    display: none;
+  }
+  .hero-image img{
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+  .hero button{
+    position: relative;
+    bottom: 0px;
+  }
+}
+/* Section Two - About Page */
+.about-container {
+  background: transparent;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+ height: 50%;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.about-text h2 {
+  font-family:'Poppins', sans-serif;
+  letter-spacing: 10px;
+  white-space: 20px;
+  font-size: 36px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.about-text p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.about-image img {
+  max-width: 100%;
+}
+@media screen and (min-width: 1023px) {
+.about-container{
+  min-height: 100% !important;
+  margin: 80px;
+}
+.about-text h2{
+  margin-bottom: 30px;
+  position: relative;
+  left: 350px;
+}
+.about-image img{
+  width: 600px;
+}
+}
+@media screen and (max-width: 767px) {
+  .about-container{
+    width:90%!important;
+    height:50% !important;
+  }
+}
+
+/* Section Three - Services Page */
+.service-section {
+  background-color: #212121;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.service-item {
+  max-height: 50rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+}
+.service-section h2{
+  font-size: 36px;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+  white-space: 20px;
+  font-size: 36px;
+}
+.service-section h3 {
+  font-family:'Poppins', sans-serif;
+  font-size: 30px;
+   margin-bottom: 10px;
+   color:#000000 ;
+   position: relative;
+   bottom: 100px;
+}
+
+.service-section p {
+  font-size: auto;
+  max-width: auto;
+  line-height: 1.5;
+  position: relative;
+   bottom: 80px;
+}
+.service-item .icon {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.service-item .icon img {
+  width: 200px;
+  position: relative;
+  left: 80px;
+}
+.icon{
+  position: absolute;
+  top: -80px;
+  left: -70px;
+}
+@media screen and (min-width: 1024px) {
+ .service-item{
+    width: 20rem;
+    padding: 60px;
+    max-height: auto;
+ }
+ .icon{
+  position: absolute;
+  top: -100px;
+  left: -100px;
+ }
+}
+@media screen and (max-width: 767px) {
+.service-item{
+  max-width: 80%;
+  position: relative;
+  left: 50px;
+}
+.icon img{
+  width: 100px;
+}
+}
+/* Section Four - Contact Page */
+.contact-section {
+  background: transparent;
+  padding: 100px 0;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-section h2 {
+  font-family:'Poppins', sans-serif;
+  letter-spacing: 10px;
+  white-space: 20px;
+  font-size: 36px;
+   margin-bottom: 40px;
+   display: flex;
+   justify-content: center;
+
+}
+
+.contact-section p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.5;
+}
+.map{
+  width: 40%;
+  height: 40%;
+}
+.mapouter {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form {
+  padding: 50px;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #00000027;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form .btn {
+  background-color: #BA68C8;
+  color: #fff;
+  outline: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type=email]:valid {
+  outline: green solid 2px;
+}

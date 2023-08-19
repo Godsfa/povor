@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+/* Hero Section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+    overflow: hidden; 
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -140px; 
+    left: 0;
+    right: 0;
+    height: 300px; 
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 35px 68px 0px rgba(0, 0, 0, 0.5), inset 0px -10px 16px 0px rgba(20, 25, 31, 0.6), inset 0px 11px 28px 0px rgba(255, 255, 255, 0);
+    border-radius: 50%;
+  }
+  
+  /* Curve the hero background */
+  .curve {
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    right: 0;
+    height: 300px; 
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 255, 255, 0.521);
+    box-shadow: 0px 35px 68px 0px rgba(0, 0, 0, 0.5), inset 0px -10px 16px 0px rgba(20, 25, 31, 0.6), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.534);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: -1; /* Send the curve behind other content */
+  }
+  @media screen and (min-width:1024px){
+    .hero::before {
+        height: 50%;
+        position: absolute;
+        top: -200px; 
+    }
+  }
+.cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: solid 1px;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+/* Animation Delay and Colors for Cubes */
+.cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+    border-color: #ff7f50; /* Orange color */
+}
+
+.cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+    border-color: #00ffff; /* Cyan color */
+}
+
+.cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+    border-color: #ff1493; /* Pink color */
+}
+
+.cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+    border-color: #7fffd4; /* Aquamarine color */
+}
+
+.cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+    border-color: #ffa500; /* Orange color */
+}
+
+.cube:nth-child(7) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+    left: 30vw;
+    top: 75vh;
+    border-color: #32cd32; /* Lime green color */
+}
+
+.cube:nth-child(8) {
+    -webkit-animation-delay: 14s;
+    animation-delay: 14s;
+    left: 15vw;
+    top: 80vh;
+    border-color: #9932cc; /* Purple color */
+}
+
+.cube:nth-child(9) {
+    -webkit-animation-delay: 16s;
+    animation-delay: 16s;
+    left: 25vw;
+    top: 40vh;
+    border-color: #ffa07a; /* Light salmon color */
+}
+
+.cube:nth-child(10) {
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s;
+    left: 75vw;
+    top: 50vh;
+    border-color: #00ff7f; /* Spring green color */
+}
+
+.cube:nth-child(11) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+    left: 90vw;
+    top: 10vh;
+    border-color: #ff69b4; /* Hot pink color */
+}
+
+.cube:nth-child(12) {
+    -webkit-animation-delay: 22s;
+    animation-delay: 22s;
+    left: 10vw;
+    top: 85vh;
+    border-color: #00ced1; /* Dark turquoise color */
+}
+
+.cube:nth-child(13) {
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+    left: 50vw;
+    top: 10vh;
+    border-color: #b8860b; /* Dark goldenrod color */
+}
+
+.cube:nth-child(14) {
+    -webkit-animation-delay: 26s;
+    animation-delay: 26s;
+    left: 30vw;
+    top: 75vh;
+    border-color: #adff2f; /* Green yellow color */
+}
+
+.cube:nth-child(15) {
+    -webkit-animation-delay: 28s;
+    animation-delay: 28s;
+    left: 15vw;
+    top: 80vh;
+    border-color: #9932cc; /* Purple color */
+}
+
+.cube:nth-child(16) {
+    -webkit-animation-delay: 30s;
+    animation-delay: 30s;
+    left: 25vw;
+    top: 40vh;
+    border-color: #ffa07a; /* Light salmon color */
+}
+
+.cube:nth-child(17) {
+    -webkit-animation-delay: 32s;
+    animation-delay: 32s;
+    left: 75vw;
+    top: 50vh;
+    border-color: #00ff7f; /* Spring green color */
+}
+
+.cube:nth-child(18) {
+    -webkit-animation-delay: 34s;
+    animation-delay: 34s;
+    left: 90vw;
+    top: 10vh;
+    border-color: #ff69b4; /* Hot pink color */
+}
+
+@-webkit-keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
