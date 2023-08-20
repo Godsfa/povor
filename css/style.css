@@ -15,7 +15,7 @@ h1, h2{
 /* Section One - Landing Page */
 .hero {
   min-width: 100%;
-  background-color: #2b2a25;
+  background-color: #212121;
   color: #fff;
   padding: 100px 0;
   position: relative;
@@ -273,74 +273,85 @@ h1, h2{
 }
 /* Section Four - Contact Page */
 .contact-section {
+  height: 100%;
   background: transparent;
-  padding: 100px 0;
+  padding: 200px 0;
 }
 
 .contact-content {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .contact-section h2 {
   font-family:'Poppins', sans-serif;
-  letter-spacing: 10px;
-  white-space: 20px;
-  font-size: 36px;
-   margin-bottom: 40px;
-   display: flex;
-   justify-content: center;
-
+letter-spacing: 10px;
+  font-size: 40px;
+   margin-bottom: 100px;
+   margin-left: 100px;
 }
-
-.contact-section p {
-  font-size: 18px;
-  max-width: 500px;
-  line-height: 1.5;
+.contact-img{
+  width: 50%;
+  float: right;
+  position: relative;
+  bottom: 22rem;
 }
-.map{
-  width: 40%;
-  height: 40%;
+.contact-img img{
+  padding: 30px;
+  width:100;
 }
-.mapouter {
-  width: 100%;
-  height: 100%;
-}
-
-.contact-form {
-  padding: 50px;
-  text-align: left;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #00000027;
-  border-radius: 5px;
-}
-
-.contact-form textarea {
-  height: 150px;
-}
-
-.contact-form .btn {
-  background-color: #BA68C8;
-  color: #fff;
-  outline: transparent;
+.contact-section .cta {
+  position: relative;
+  left: 200px;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  background: none;
 }
-input[type=email]:valid {
-  outline: green solid 2px;
+
+.contact-section .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #BA68C8;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.contact-section .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #2F3D44;
+}
+
+.contact-section .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #d387e0;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.contact-section .cta:hover:before {
+  width: 100%;
+  background: #480255;
+}
+
+.contact-section .cta:hover svg {
+  transform: translateX(0);
+}
+
+.contact-section .cta:active {
+  transform: scale(0.95);
 }

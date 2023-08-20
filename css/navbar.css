@@ -1,4 +1,21 @@
 
+
+  body::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #e0d2e0; /* Background color of the scrollbar track */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #660fad3f; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Round the edges of the thumb */
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
     display: none;

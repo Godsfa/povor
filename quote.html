@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote</title>
+    <link rel="stylesheet" href="css/quote.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <div class="menu-items">
+            <li><a href="#home" class="a">Home</a></li>
+            <li><a href="#about" class="b">About</a></li>
+            <li><a href="#service" class="c">Services</a></li>
+            <li><a href="testimonial.html" class="e">Testimonial</a></li>
+            <div class="visit">
+              <li><a href="contact.html" class="g">Contact</a></li>
+              <li><a href="quote.html" class="f">Quote</a></li>
+            </div>
+          </div>
+        </ul>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="img/POVOR-removebg-preview.png"
+              alt="unsplash image"
+              style="width: 200px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <h1>Request a Free Quote</h1>
+    </header>
+
+    <!--SECTION1-->
+    <div class="section1">
+      <section>
+        <h1 class="title inline-photo2 show-on-scroll2">
+          <em>Povor</em>
+        </h1>
+        <div class="rows">
+          <span class="inline-photo show-on-scroll">
+            <i class="fa fa-phone"></i>
+            <h3>Responsive Customer Service</h3>
+          </span>
+          <span class="inline-photo show-on-scroll">
+            <i class="fa fa-gavel"></i>
+            <h3>Response Within 48 Hours</h3>
+          </span>
+        </div>
+        <div class="rows">
+          <span class="inline-photo show-on-scroll">
+            <i class="fa fa-bank"></i>
+            <h3>Reasonable Prices</h3>
+          </span>
+          <span class="inline-photo show-on-scroll">
+            <i class="fa fa-credit-card"></i>
+            <h3>Consultation Booking</h3>
+          </span>
+        </div>
+      </section>
+      <section>
+        <div class="form">
+          <h1 class="title">Request Quote</h1>
+          <form id="quote-form">
+            <fieldset>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Fullname"
+                required=""
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                type="tel"
+                name="contact"
+                id="contact"
+                placeholder="Mobile number"
+                minlength="10"
+                maxlength="15"
+                required=""
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required=""
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                type="text"
+                name="business_name"
+                id="business"
+                placeholder="Business Name"
+                required=""
+              />
+            </fieldset>
+            <fieldset>
+              <select name="service" id="service">
+                <option value="0">Select your service</option>
+                <option value="1" class="option">Web Design</option>
+                <option value="2" class="option">Web Development</option>
+                <option value="3" class="option">Logo Design</option>
+                <option value="4" class="option">Presentation Design</option>
+                <option value="5" class="option">Ui/UX Design</option>
+                <option value="6" class="option">Digital Strategy</option>
+                <option value="7" class="option">Other Services</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <select
+                id="country"
+                style="margin-bottom: 20px"
+                name="country"
+                class="form-control"
+              ></select>
+
+              <select
+                name="state"
+                style="margin-bottom: 20px"
+                id="state"
+                class="form-control"
+              ></select>
+
+              <textarea
+                name="message"
+                id="message"
+                maxlength="500"
+                placeholder="Your message here..."
+                required=""
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button onclick="validate()" class="btn1">Get a quote</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-img">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
+              error?
+            </p>
+            <img src="img/POVOR-removebg-preview.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Help</h3>
+          <ul class="footer-links">
+            <!-- <li><a href="#">FAQ</a></li> -->
+            <li><a href="conditions.html">Terms & Conditions</a></li>
+
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Follow Us</h3>
+          <div class="wrapper">
+            <div class="row">
+              <a href="#"
+                ><div class="bg-ico" id="facebook">
+                  <i class="fab fa-facebook social facebook fa-3x"></i></div
+              ></a>
+              <a href="#"
+                ><div class="bg-ico" id="pinterest">
+                  <i class="fab fa-pinterest social pinterest fa-3x"></i></div
+              ></a>
+              <a href="#"
+                ><div class="bg-ico" id="twitter">
+                  <i class="fab fa-twitter social twitter fa-3x"></i></div
+              ></a>
+            </div>
+            <div class="row">
+              <a href="#"
+                ><div class="bg-ico" id="instagram">
+                  <i class="fab fa-instagram social instagram fa-3x"></i></div
+              ></a>
+              <a href="#"
+                ><div class="bg-ico" id="tumblr">
+                  <i class="fab fa-tumblr social tumblr fa-3x"></i></div
+              ></a>
+              <a href="#"
+                ><div class="bg-ico" id="whatsapp">
+                  <i class="fab fa-whatsapp social whatsapp fa-3x"></i></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; Povor. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/contry.js"></script>
+  </body>
+</html>
