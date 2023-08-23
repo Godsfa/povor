@@ -18,8 +18,6 @@ h1, h2{
   background-color: #212121;
   color: #fff;
   padding: 100px 0;
-  position: relative;
-  top: 80px;
   margin-bottom: 50px !important;
 }
 
@@ -197,80 +195,7 @@ h1, h2{
   text-align: center;
 }
 
-.services {
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
 
-.service-item {
-  max-height: 50rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
-}
-.service-section h2{
-  font-size: 36px;
-  word-spacing: 10px;
-  letter-spacing: 10px;
-  white-space: 20px;
-  font-size: 36px;
-}
-.service-section h3 {
-  font-family:'Poppins', sans-serif;
-  font-size: 30px;
-   margin-bottom: 10px;
-   color:#000000 ;
-   position: relative;
-   bottom: 100px;
-}
-
-.service-section p {
-  font-size: auto;
-  max-width: auto;
-  line-height: 1.5;
-  position: relative;
-   bottom: 80px;
-}
-.service-item .icon {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.service-item .icon img {
-  width: 200px;
-  position: relative;
-  left: 80px;
-}
-.icon{
-  position: absolute;
-  top: -80px;
-  left: -70px;
-}
-@media screen and (min-width: 1024px) {
- .service-item{
-    width: 20rem;
-    padding: 60px;
-    max-height: auto;
- }
- .icon{
-  position: absolute;
-  top: -100px;
-  left: -100px;
- }
-}
-@media screen and (max-width: 767px) {
-.service-item{
-  max-width: 80%;
-  position: relative;
-  left: 50px;
-}
-.icon img{
-  width: 100px;
-}
-}
 /* Section Four - Contact Page */
 .contact-section {
   height: 100%;

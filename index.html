@@ -6,45 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Povor</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/animation.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="aos-master/css/styles.css" />
   <link rel="stylesheet" href="aos-master/dist/aos.css" />
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <div id="mouse-detector"></div>
-
   <div class="wrapper">
     <nav class="navbar">
-      <div class="navbar-container container">
-        <input type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-        <ul class="menu-items">
-          <div class="menu-items">
-            <li><a href="#home" class="a">Home</a></li>
-            <li><a href="#about" class="b">About</a></li>
-            <li><a href="#service" class="c">Services</a></li>
-            <li><a href="testimonial.html" class="e">Testimonial</a></li>
-            <div class="visit">
-              <li><a href="contact.html" class="g">Contact</a></li>
-              <li><a href="quote.html" class="f">Quote</a></li>
-            </div>
-          </div>
-        </ul>
         <div class="logo">
           <a href="index.html">
             <img src="img/POVOR-removebg-preview.png" alt="unsplash image" style="width: 200px;" />
           </a>
-        </div>
       </div>
     </nav>
 
@@ -96,43 +75,41 @@
   <!-- Section Three - Services Page -->
   <div class="service-section" id="service">
     <h2>Our Services</h2>
-    <div class="services">
-      <div data-aos="zoom-in-down" data-aos-duration="700">
-        <div class="service-item">
-          <div class="icon">
-
-            <img src="img/Gift Box (AI style).png" alt="">
+    
+    <div class="cards-wrapper">
+      <div class="card-grid-space">
+        <div class="num">Strategy and branding</div>
+        <a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+          <div class="service-item">
+            <h3>Naming</h3>
+            <hr>
+            <h3>Graphic & Logo Design</h3>
           </div>
-          <h3>Web Development</h3>
-          <p class="sa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam temporibus dolorum quasi
-            minus praesentium doloremque labore unde eius officia?</p>
-        </div>
+        </a>
       </div>
-      <div data-aos="zoom-in-up" data-aos-duration="700">
-        <div class="service-item" style="background: #a76baf;">
-          <div class="icon">
-
-            <img src="img/Gift Box.png" alt="">
+      <div class="card-grid-space">
+        <div class="num">Website Design</div>
+        <a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+          <div class="service-item">
+            <h3>Website Deign</h3>
+            <hr>
+            <h3>UI Design</h3>
           </div>
-          <h3 style="color: #000;" class="ss">Graphics Design</h3>
-          <p class="sb">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti reprehenderit porro incidunt
-            similique quidem soluta. Expedita veniam tempora temporibus animi.</p>
-        </div>
+        </a>
       </div>
-      <div data-aos="zoom-in-down" data-aos-duration="700">
-        <div class="service-item">
-          <div class="icon">
-
-            <img src="img/Gift.png" alt="">
+      <div class="card-grid-space">
+        <div class="num">Website Development</div>
+        <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+          <div class="service-item">
+           <h3>Web Development</h3>
+           <hr>
+           <h3>SEO Strategy</h3>
           </div>
-          <h3 class=" position: relative;
-            bottom:30%;">UI/UX Design</h3>
-          <p class="sc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias beatae at sunt reprehenderit quo
-            ipsum perferendis itaque natus illo amet.</p>
-        </div>
-        <div data-aos="zoom-in-down"></div>
+        </a>
       </div>
+      <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
     </div>
+
   </div>
 
   <!-- Section Four - Testimonial Page -->
@@ -231,6 +208,7 @@
 
   </div>
   <script src="js/script.js"></script>
+  <script src="js/card.js"></script>
   <script src="aos-master/dist/aos.js"></script>
   <script>
 
@@ -253,6 +231,38 @@
       itemsCounter++;
     }
   </script>
+
+<div id="circularMenu" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+    <i class="bi bi-plus" style="font-size: 30px;position: relative;bottom: 30px;"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#" class="menu-item bi bi-facebook"></a>
+    <a href="#" class="menu-item bi bi-twitter"></a>
+    <a href="#" class="menu-item bi bi-linkedin"></a>
+    <a href="#" class="menu-item bi bi-github"></a>
+  </menu>
+
+</div>
+
+
+<div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="bi bi-list" style="font-size: 30px;position: relative;bottom: 30px;"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="quote.html" class="menu-item bi bi-pen"></a>
+    <a href="contact.html" class="menu-item bi bi-person-lines-fill"></a>
+    <a href="index.html#service" class="menu-item bi bi-hdd-network-fill"></a>
+    <a href="index.html#about" class="menu-item bi bi-people-fill"></a>
+  </menu>
+
+</div>
+
 </body>
 
 </html>

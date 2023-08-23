@@ -1,17 +1,4 @@
 
-    // JavaScript to handle the active class based on the current page
-    const currentPath = window.location.pathname;
-    const links = document.querySelectorAll('.menu-items li a');
-
-    links.forEach(link => {
-        const linkPath = link.getAttribute('href');
-        if (linkPath === currentPath) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
-
 
     const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
