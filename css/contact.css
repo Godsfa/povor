@@ -7,15 +7,6 @@
 .clearfix:before, .clearfix:after { display: table; content: ''; }
 .clearfix:after { clear: both; }
 
-
-body {
-	background: #ffffff;
-	color: #333;
-	font-weight: normal;
-	font-size: 1em;
-	font-family: 'Roboto', Arial, sans-serif;
-}
-
 input:focus, textarea:focus, keygen:focus, select:focus {
 	outline: none;
 }
@@ -37,7 +28,6 @@ a{
     color: black;
 }
 header {
-    margin-top: 90px;
     width: 100%;
     background-color: #333;
     color: #BA68C8;
@@ -53,6 +43,7 @@ header {
 	text-align: center;
 }
 .section1 {
+	background-color: #9177AC;
 	text-align: center;
 	display: table;
 	width: 100%;

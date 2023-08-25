@@ -5,30 +5,21 @@
   --transition-time: 0.5s;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: 'Open Sans';
-  background: #fafafa;
-}
-
 a {
   color: inherit;
 }
 
 .cards-wrapper {
-  display: grid;
+  min-width: 100% !important;
+  display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
-  padding: 4rem;
-  margin: 0 auto;
-  width: max-content;
+  grid-gap: 1rem;
+  margin: 0 auto; width: max-content;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .card {
@@ -36,7 +27,7 @@ a {
   --bg-filter-opacity: 0.5;
   background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
   height: 20em;
-  width: 15em;
+  width: 13em;
   font-size: 1.5em;
   color: white;
   border-radius: 1em;
@@ -46,12 +37,16 @@ a {
   align-items: flex-end;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 5em -1em black;
+  /* box-shadow: 0 0 5em -1em black; */
   transition: all, var(--transition-time);
   position: relative;
   overflow: hidden;
   border: 10px solid #ccc;
   text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card:hover {
@@ -71,7 +66,7 @@ a {
   line-height: 2em;
 }
 .num{
-    color: #fff;
+    color: #1a1a1a;
     font-size: 30px !important;
 }
 .service-item h3{
@@ -129,11 +124,13 @@ a {
 }
 
 .card:after {
-  background: white;
+  background: #1b2223;
   width: 200%;
   height: 200%;
 }
-
+.card2:after{
+  background: #580ef6 !important;
+}
 .card:hover {
   color: var(--color);
 }
@@ -172,9 +169,20 @@ a {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 30px;
+  }
+}
 @media screen and (max-width: 900px) {
   .cards-wrapper {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 30px;
   }
   .info {
     justify-content: center;

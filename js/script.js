@@ -1,3 +1,28 @@
+const words = [
+  "POTENTIAL",
+  "Revolution",
+  "Aspiration",
+  "Transformation",
+  "Innovation",
+  "Empowerment"
+]; // Powerful and captivating words
+
+const animatedWord = document.querySelector('.animated-word');
+
+let currentIndex = 0;
+
+function animateWord() {
+  animatedWord.textContent = words[currentIndex];
+  animatedWord.style.opacity = 1;
+
+  setTimeout(() => {
+    animatedWord.style.opacity = 0;
+    currentIndex = (currentIndex + 1) % words.length;
+    setTimeout(animateWord, 1000); // Delay before showing the next word
+  }, 4000); // Time before fading out
+}
+
+animateWord();
 
 
     const typedTextSpan = document.querySelector(".typed-text");
